@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natesh Babu Arunachalam - AI/ML Product Leader</title>
+    <title>Natesh Babu Arunachalam - AI/ML Innovator & Leader</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -15,17 +16,21 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#patents">Patents</a></li>
             </ul>
         </div>
     </nav>
 
     <header>
         <div class="container">
+            <img src="path_to_your_headshot.jpg" alt="Natesh Babu Arunachalam" class="headshot">
             <h1>Natesh Babu Arunachalam</h1>
-            <p>AI/ML Product Leader</p>
+            <p class="tagline">AI/ML Product Leader | Innovator | Speaker</p>
             <div class="contact-info">
-                <p>737-781-1161 • natesh.arunachalam@mba.berkeley.edu</p>
-                <p><a href="https://www.linkedin.com/in/nateshbabu/">LinkedIn Profile</a></p>
+                <p><i class="fas fa-phone"></i> 737-781-1161</p>
+                <p><i class="fas fa-envelope"></i> natesh.arunachalam@mba.berkeley.edu</p>
+                <p><a href="https://www.linkedin.com/in/nateshbabu/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
             </div>
         </div>
     </header>
@@ -39,7 +44,7 @@
         <section id="experience">
             <h2>Experience</h2>
             
-            <article>
+            <article class="job">
                 <h3>Director of Data Science</h3>
                 <p class="meta">Mastercard, Salt Lake City, Utah | Mar 2023-Present</p>
                 <ul>
@@ -47,12 +52,12 @@
                     <li>Focus areas: Risk modeling, Fraud detection, Infrastructure/tooling, GenAI, Governance lead, Product analytics, Experimentation (A/B testing)</li>
                     <li>Tools: Python, SQL, SpaCy, AWS Sagemaker, Snowflake, Docker, Linux, XGBoost, LLMs, GenAI, Tableau</li>
                     <li>Leading a 5 member team for a $25M Payment Intelligence product suite</li>
-                    <li>Established Responsible AI best practices</li>
-                    <li>Speaker at various AI/ML conferences, KaggleX mentor, NeurIPS conference ethics reviewer</li>
+                    <li>Established Responsible AI best practices - monthly governance, explainability, real time monitoring, bias testing</li>
+                    <li>Speaker at various AI/ML conferences, KaggleX mentor, NeurIPS conference ethics reviewer, data.org $10M challenge judge</li>
                 </ul>
             </article>
 
-            <article>
+            <article class="job">
                 <h3>Lead Data Scientist</h3>
                 <p class="meta">Mastercard, Salt Lake City, Utah | Jan 2022-Feb 2023</p>
                 <ul>
@@ -63,7 +68,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="job">
                 <h3>Senior Data Scientist</h3>
                 <p class="meta">Mastercard, Salt Lake City, Utah | May 2021-Dec 2021</p>
                 <ul>
@@ -73,7 +78,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="job">
                 <h3>Associate, Model Review Group</h3>
                 <p class="meta">JP Morgan Chase, New York City, New York | July 2018-May 2021</p>
                 <ul>
@@ -84,7 +89,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="job">
                 <h3>Vendor Manager</h3>
                 <p class="meta">Swiggy, Hyderabad, India | July 2015-Jan 2016</p>
                 <ul>
@@ -92,7 +97,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="job">
                 <h3>Application Engineer</h3>
                 <p class="meta">Oracle, Hyderabad, India | June 2014-July 2015</p>
                 <ul>
@@ -103,27 +108,62 @@
 
         <section id="education">
             <h2>Education</h2>
-            <article>
+            <article class="education">
                 <h3>Master of Business Administration</h3>
                 <p class="meta">University of California, Berkeley, Haas School of Business | Aug 2022 - May 2025*</p>
                 <p>Focus: Product management, Marketplace design, Strategy, Operations, Leadership</p>
                 <p>VP Haas AI club</p>
             </article>
-            <article>
+            <article class="education">
                 <h3>M.S in Operations Research</h3>
                 <p class="meta">University of Texas at Austin | Aug 2016 - May 2018</p>
                 <p>Focus: Linear programming, Applied Probability, Machine Learning</p>
             </article>
-            <article>
+            <article class="education">
                 <h3>B.E (Honours) in Electrical and Electronics Engineering</h3>
                 <p class="meta">BITS Pilani, India | Aug 2010 - May 2014</p>
             </article>
+        </section>
+
+        <section id="talks">
+            <h2>Conference Talks</h2>
+            <article class="talk">
+                <h3>Machine Learning Week US</h3>
+                <p class="meta">AI Applications in Open Banking</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="talk">
+                <h3>Data Science Salon</h3>
+                <p class="meta">Risks of AI and Mitigation Strategies</p>
+                <p>Presentation on the various potential risks of AI and how they can best be mitigated, including a practical pipeline for AI/ML model development to minimize common risks.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/another_video_id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <section id="patents">
+            <h2>Patents</h2>
+            <p>As an innovator in the AI/ML field, I have filed for multiple patents to protect groundbreaking inventions. For a comprehensive list of my patents and patent applications, please visit the <a href="https://patents.justia.com/inventor/natesh-babu-arunachalam" target="_blank">USPTO patent database</a>.</p>
+            <ul class="patent-list">
+                <li>AI-Driven Risk Assessment in Financial Transactions</li>
+                <li>Machine Learning Model for Enhanced Fraud Detection</li>
+                <li>Innovative NLP Techniques for Transaction Categorization</li>
+                <!-- Add more patent titles as needed -->
+            </ul>
         </section>
     </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 Natesh Babu Arunachalam. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nateshbabu/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/your_twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/your_github"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
 </body>
