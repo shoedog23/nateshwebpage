@@ -5,8 +5,6 @@
     --background-color: #f9f9f9;
     --text-color: #333;
     --border-color: #ddd;
-    --font-family: 'Roboto', sans-serif;
-    --font-family-display: 'Playfair Display', serif;
 }
 
 * {
@@ -16,7 +14,7 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -36,7 +34,6 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav .container {
@@ -50,14 +47,12 @@ nav .container {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    font-family: var(--font-family-display);
+    font-family: 'Playfair Display', serif;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
@@ -81,14 +76,12 @@ header {
     padding: 150px 0 100px;
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    background-size: cover;
-    background-position: center;
 }
 
 header h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    font-family: var(--font-family-display);
+    font-family: 'Playfair Display', serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -127,7 +120,7 @@ h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 30px;
-    font-family: var(--font-family-display);
+    font-family: 'Playfair Display', serif;
     position: relative;
     padding-bottom: 10px;
 }
@@ -142,13 +135,13 @@ h2::after {
     background-color: var(--secondary-color);
 }
 
-.job, .education, .talk {
+.job {
     margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid var(--border-color);
 }
 
-.job:last-child, .education:last-child, .talk:last-child {
+.job:last-child {
     border-bottom: none;
     padding-bottom: 0;
 }
@@ -157,6 +150,13 @@ h3 {
     font-size: 1.8rem;
     color: var(--primary-color);
     margin-bottom: 10px;
+}
+
+h4 {
+    color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 
 .meta {
@@ -182,6 +182,28 @@ a {
 
 a:hover {
     color: var(--secondary-color);
+}
+
+.company-logo {
+    max-width: 200px;
+    max-height: 100px;
+    margin-bottom: 20px;
+}
+
+.education {
+    margin-bottom: 30px;
+}
+
+.education:last-child {
+    margin-bottom: 0;
+}
+
+.publication {
+    margin-bottom: 30px;
+}
+
+.publication:last-child {
+    margin-bottom: 0;
 }
 
 footer {
@@ -227,52 +249,9 @@ footer {
     h3 {
         font-size: 1.5rem;
     }
-}
 
-/* additional styles */
-
-.container {
-    max-width: 1000px;
-}
-
-section {
-    padding: 30px;
-}
-
-.job, .education, .talk {
-    padding-bottom: 30px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-h3 {
-    margin-bottom: 5px;
-}
-
-.meta {
-    font-size: 0.9rem;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-a {
-    text-decoration: underline;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-footer {
-    padding: 20px 0;
+    .company-logo {
+        max-width: 150px;
+        max-height: 75px;
+    }
 }
